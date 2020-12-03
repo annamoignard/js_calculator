@@ -9,7 +9,7 @@ const readlineSync = require('readline-sync');
 // going to divide our logic into 3 core functions
 const menu = () => {
   console.log("Welcome to the calculator app!");
-  console.log("what would you like to do?");
+  console.log("what would you like to do? ");
   console.log(`
     1. Add 2 numbers
     2. Subtract 2 numbers
