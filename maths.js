@@ -19,4 +19,12 @@ const power = (num1, num2) => {
   return num1 ** num2;
 } 
 
-console.log(power(2, 7)) 
+// this is an object and the module exports allows us to export modules 
+
+module.exports = {
+  multiplier: multiplier,
+  adder: adder,
+  takeawayer: takeawayer,
+  divider: divider,
+  power: power
+}

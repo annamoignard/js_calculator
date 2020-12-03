@@ -19,6 +19,19 @@ const menu = () => {
   `);
 }
 
+const input = () => {
+  const selection = parseInt(readlineSync.question('> '));
+  console.log("Enter number 1")
+  const num1 = parseInt(readlineSync.question('> '));
+  console.log("Enter number 2")
+  const num2 = parseInt(readlineSync.question('> '));
+  return {
+    input: selection,
+    num1: num1,
+    num2: num2
+  }
+}
+
 const userSelection = (selections) => {
   switch (selections.input){ 
     case 1:
@@ -48,9 +61,7 @@ const userSelection = (selections) => {
       break;
     default: 
       console.log("cannot select this!"); 
-
   }
-
 }
 
 // first run the menu for the user
