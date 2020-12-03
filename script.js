@@ -1,7 +1,9 @@
 // this is importing the maths.js file 
 const maths = require("./maths");
 // this is the prompt package for user input
-const prompt = require('prompt') 
+const prompt = require('prompt')  
+// requires in the new user input package 
+const readlineSync = require('readline-sync');
 
 
 // going to divide our logic into 3 core functions
@@ -17,12 +19,43 @@ const menu = () => {
   `);
 }
 
-const userSelection = (selection) => {
-  switch (selection.input){
-    
+const userSelection = (selections) => {
+  switch (selections.input){ 
+    case 1:
+      // adding two numbers
+      const addResult = maths.adder(selections.num1, selections.num2); 
+      console.log(addResult); 
+      break;
+    case 2:
+      // takeaway two numbers
+      const subtractResult = maths.takeawayer(selections.num1, selections.num2); 
+      console.log(subtractResult); 
+      break;
+    case 3:
+        // multiply two numbers
+      const multiplyResult = maths.multiplier(selections.num1, selections.num2); 
+      console.log(multiplyResult); 
+      break;
+    case 4:
+      // divde two numbers
+      const divideResult = maths.divider(selections.num1, selections.num2); 
+      console.log(divideResult); 
+      break;
+    case 5:
+      // power of two numbers
+      const powerOfResult = maths.power(selections.num1, selections.num2); 
+      console.log(powerOfResult); 
+      break;
+    default: 
+      console.log("cannot select this!"); 
+
   }
 
 }
 
-
+// first run the menu for the user
 menu()
+// now the user can make a selection - input = number user types in 
+const selections = input()
+// when number selected, run the userSelections switch statement
+userSelection(selections)
