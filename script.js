@@ -1,5 +1,16 @@
-console.log('Welcome to the calculator app!'); 
-console.log('You can complete addition, substraction, power of, muliplication and division with two numbers!'); 
+
+const menu = () => {
+  console.log("Welcome to the calculator app!");
+  console.log("what would you like to do?");
+  console.log(`
+    1. Add 2 numbers
+    2. Subtract 2 numbers
+    3. Multiply 2 numbers
+    4. Divide 2 numbers
+    5. Power of 2 numbers
+  `);
+}
+
 
 const adder = (num1, num2) => {
   return num1 + num2;
@@ -21,4 +32,5 @@ const power = (num1, num2) => {
   return num1 ** num2;
 } 
 
-console.log(adder(2, 7))
+menu()
+console.log(power(2, 7))
