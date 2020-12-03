@@ -1,0 +1,13 @@
+{
+  "name": "js_calculator",
+  "version": "1.0.0",
+  "description": "a little app to practise js",
+  "main": "index.js",
+  "repository": "https://github.com/annamoignard/js_calculator.git",
+  "author": "Anna Moignard <amoignard.coder@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prompt": "^1.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}

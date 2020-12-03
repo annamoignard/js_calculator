@@ -1,4 +1,10 @@
+// this is importing the maths.js file 
+const maths = require("./maths");
+// this is the prompt package for user input
+const prompt = require('prompt') 
 
+
+// going to divide our logic into 3 core functions
 const menu = () => {
   console.log("Welcome to the calculator app!");
   console.log("what would you like to do?");
@@ -11,26 +17,12 @@ const menu = () => {
   `);
 }
 
+const userSelection = (selection) => {
+  switch (selection.input){
+    
+  }
 
-const adder = (num1, num2) => {
-  return num1 + num2;
-} 
+}
 
-const takeawayer = (num1, num2) => {
-  return num1 - num2;
-} 
-
-const multiplier = (num1, num2) => {
-  return num1 * num2;
-} 
-
-const divider = (num1, num2) => {
-  return num1 / num2;
-} 
-
-const power = (num1, num2) => {
-  return num1 ** num2;
-} 
 
 menu()
-console.log(power(2, 7))
